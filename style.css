@@ -9,6 +9,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-wrap: nowrap;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -52,6 +53,16 @@ body {
     justify-content: space-between;
     margin: 20px 0px;
 }
+.acclef{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.accright{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
 .acclef span{
     color: hsl(178, 100%, 50%);
 }
@@ -75,6 +86,7 @@ body {
 }
 .last{
     color: white;
+    margin-left: 4px;
 }
 .author p{
     font-size: small;
