@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Open Sans", sans-serif;
+}
+
+.card {
+    max-width: 320px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    padding: 24px;
+    color: white;
+    box-shadow: 
+    0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.mainimg {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.content h1 {
+    font-weight: 600;
+    font-size:large ;
+}
+
+.content p {
+    color: hsl(214, 36%, 52%);
+    font-weight: 400;
+    font-size: small;
+    line-height: 30px;
+}
+.accinfo{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.acclef span{
+    color: hsl(178, 100%, 50%);
+}
+.accright span{
+    color: hsl(215, 51%, 70%);
+}
+.author{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.auth{
+    width: 50px;
+    border: 2px solid white;
+    border-radius: 100px;
+}
+.first{
+    color: hsl(215, 51%, 70%);
+}
+.last{
+    color: white;
+}
+.author p{
+    font-size: small;
+}
+
+
+@media only screen and (min-width:1080px) {
+    
+    .card{
+        width:375px;
+        position: relative;
+    }
+
+    }
+    .images:hover .overlay{
+        cursor: pointer;
+        opacity: 1;
+    }
+    .images{
+        position: relative;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .mainimg{
+        display: block;
+        width: 100%;
+    }
+    .overlay{
+        position: absolute;
+        inset: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb cyan;
+        opacity: 0;
+        transition: 0.3s ease;
+    }
+    h1:hover{
+        color: cyan;
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+    .last:hover{
+        color: cyan;
+        cursor: pointer;
+         transition: 0.5s ease;
+    }
+
+    

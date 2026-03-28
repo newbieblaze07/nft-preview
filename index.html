@@ -1,33 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Figtree:ital,wght@0,300..900;1,300..900&family=Happy+Monkey&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+
   <title>Frontend Mentor | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
+  <div class="card">
+    <div class="images">
+      <img class="mainimg" src="images/image-equilibrium.jpg" alt="">
+      <div class="overlay">
+        <img src="images/icon-view.svg" alt="">
+      </div>
+    </div>
+    <div class="content">
+      <h1>Equilibrium #3429</h1>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+    </div>
+    <div class="accinfo">
+      <div class="acclef">
+        <img src="images/icon-ethereum.svg" alt="">
+        <span>0.041 ETH</span>
+      </div>
+      <div class="accright">
+        <img src="images/icon-clock.svg" alt="">
+        <span>3 days left</span>
+      </div>
+    </div>
+    <hr>
+    <div class="author">
+      <img id="auth" src="images/image-avatar.png" alt="" class="auth">
+      <p><span class="first">Creation of</span><span class="last"> Jules Wyvern</span></p>
 
-  Equilibrium #3429
+    </div>
+  </div>
 
-  Our Equilibrium collection promotes balance and calm.
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Your Name Here</a>. -->
   </div>
 </body>
+
 </html>
